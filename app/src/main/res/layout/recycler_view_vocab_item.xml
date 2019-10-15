@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+   >
+    <data>
+
+        <variable
+            name="vocab"
+            type="uk.ac.aber.vocabhelper.vocabhelper.Vocab" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:id = "@+id/parent_layout">
+
+
+        <TextView
+            android:id="@+id/lang_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="22dp"
+            android:text = "@{vocab.language}"
+           />
+
+        <TextView
+            android:id="@+id/learn_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:text = "@{vocab.learn}"
+            android:textColor="@color/colorPrimaryDark"
+           />
+
+        <TextView
+            android:id="@+id/meaning_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text = "@{vocab.meaning}"
+            android:layout_marginTop="53dp"/>
+    </RelativeLayout>
+
+</layout>

@@ -17,7 +17,7 @@ public class ExampleUnitTest {
 
 @Test
     public void addVocab(){
-        onView
+
 }
 
 
